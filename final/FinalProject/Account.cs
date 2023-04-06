@@ -39,11 +39,17 @@ namespace BankApp;
     public string Owner { get; set; }
     public decimal Balance { get; set; }
 
-    public Account(string accountNumber, string owner)
+    public Account(string accountNumber, string owner, decimal balance)
     {
         AccountNumber = accountNumber;
         Owner = owner;
         Balance = 0M;
+    }
+
+    protected Account(string accountNumber, string owner)
+    {
+        AccountNumber = accountNumber;
+        Owner = owner;
     }
 
     public virtual void Deposit(decimal amount)

@@ -2,15 +2,20 @@ using BankApp;
 
 internal class SavingsAccount
 {
-    private string v1;
-    private string v2;
-    private decimal v3;
+    private string accountNumber;
+    private string owner;
+    private decimal interestRate;
 
    public SavingsAccount(string accountNumber, string owner, decimal interestRate) : base(accountNumber, owner, interestRate)
     {
-        this.v1 = v1;
-        this.v2 = v2;
-        this.v3 = v3;
+        this.accountNumber = accountNumber;
+        this.owner = owner;
+        this.interestRate = interestRate;
+    }
+
+    internal void Deposit(decimal v)
+    {
+        throw new NotImplementedException();
     }
 }// Savings account class
     public class NewSavingsAccount : Account

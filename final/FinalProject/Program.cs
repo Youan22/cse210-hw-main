@@ -2,10 +2,10 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main(string[] args, NewSavingsAccount newSavingsAccount, NewSavingsAccount newCheckingAccount)
     {
         // Create a new bank manager
-        var accounts = new List<Account>();
+        var accounts = new List<NewSavingsAccount>();
         var bankManager = new BankManager(accounts);
 
         // Create a savings account and a checking account
@@ -18,8 +18,8 @@ class Program
         checkingAccount.Withdraw(200M);
 
         // Add the accounts to the bank manager's account list
-        accounts.Add(savingsAccount);
-        accounts.Add(checkingAccount);
+        accounts.Add(newSavingsAccount);
+        accounts.Add(newCheckingAccount);
 
         // Create a loan application and a credit card application
         var loanApplication = new LoanApplication("John Doe", 10000M, 24);
