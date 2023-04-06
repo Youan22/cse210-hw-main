@@ -67,8 +67,7 @@ public class SavingsAccount : Account
 {
     public decimal InterestRate { get; }
 
-    public SavingsAccount(string accountNumber, string owner, decimal interestRate)
-        : base(accountNumber, owner)
+    public SavingsAccount(string accountNumber, string owner, decimal interestRate) : base(accountNumber, owner, interestRate)
     {
         InterestRate = interestRate;
     }

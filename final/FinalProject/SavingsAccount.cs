@@ -8,7 +8,7 @@ internal class SavingsAccount
 
    public SavingsAccount(string accountNumber, string owner, decimal interestRate) : base(accountNumber, owner, interestRate)
     {
-        this.accountNumber = accountNumber;
+        this.accountNumber = accountNumber;  
         this.owner = owner;
         this.interestRate = interestRate;
     }
