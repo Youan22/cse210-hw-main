@@ -54,5 +54,15 @@ class Program
             this.v2 = v2;
             this.v3 = v3;
         }
+
+        internal void Deposit(decimal v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void Withdraw(decimal v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
