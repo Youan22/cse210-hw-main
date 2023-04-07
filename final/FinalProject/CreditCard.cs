@@ -1,4 +1,6 @@
+ using System;
  // Credit card class
+    
     public class CreditCard
     {
         public string CardNumber { get; }
